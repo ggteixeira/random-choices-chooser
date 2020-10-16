@@ -10,7 +10,7 @@ function MainForm() {
   const handleChange = (event) => {
     setChoice(event.target.value)
   }
-  
+
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log("Botão funcionou")
@@ -23,19 +23,17 @@ function MainForm() {
       onSubmit={handleSubmit}
     >
       <TextField
-        // value={choice}
-        id="choice"
-        margin="normal"
         label="Insira uma opção"
+        id="choice"
         variant="outlined"
-        fullWidth
+        size="small"
         onChange={handleChange}
       />
 
       <Button
         variant="contained"
         color="primary"
-        type="submit"
+        type="submit" 
       >
         Cadastrar
       </Button>
